@@ -9,8 +9,10 @@ public class Main {
         AreaCalculator areaCalculator = new AreaCalculator();
         Circle circle = new Circle(10);
         Square square = new Square(10);
+        Cube cube = new Cube();
+        Rectangle rectangle = new Rectangle();
 //        List<Object> shapes = List.of(circle, square);
-        List<Shape> shapes = List.of(circle, square); // I will now use interface Shape here instead of Object.
+        List<Shape> shapes = List.of(circle, square, cube); // I will now use interface Shape here instead of Object.
         int sum = areaCalculator.sum(shapes);
         System.out.println("sum = " + sum);
         // System.out.println(areaCalculator.json(shapes)); // AreaCalculator is not supposed to print JSON, just do sum!
