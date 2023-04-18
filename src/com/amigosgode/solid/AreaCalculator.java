@@ -2,7 +2,7 @@ package com.amigosgode.solid;
 
 import java.util.List;
 
-public class AreaCalculator {
+public class AreaCalculator implements InterfaceAreaCalculator {
     public int sum(List<Shape> shapes) { // Instead of Object we wil take Shape, because of the Shape interfgace.
         int sum = 0;
         for (int i = 0; i < shapes.size(); i++) {
